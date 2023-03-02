@@ -1,13 +1,19 @@
-﻿class Program {
-    static void Main(string[] args) {
-        int capital = 20000;
-        int year = 3;
-        float rate = 6.25f;
+﻿using System;
+namespace Homework {
+    class Program {
+        static void Main(string[] args) {
+            Console.WriteLine("Enter your passcode: ");
+            string pass = Console.ReadLine();
 
-        float result = capital * year * rate / 100.0f;
+            Console.WriteLine("Enter your agency: ");
+            string agent = Console.ReadLine();
 
-        Console.WriteLine("result is {0}",result);
-
+            if (pass.Length != 6) {
+                Console.WriteLine("Error: Passcode must have 6 digits.");
+            }
+            else if (agent != "FBI" && agent != "NSA" && agent != "CIA") {
+                
+            }
+        }
     }
 }
-
