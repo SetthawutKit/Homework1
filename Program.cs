@@ -38,7 +38,6 @@ namespace Homework {
                     Console.WriteLine("Error: Passcode is not valid for this agency.");
                 }
             }
-            Console.ReadLine();
         }
     }
 }
