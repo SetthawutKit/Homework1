@@ -15,7 +15,7 @@ namespace Homework {
                 Console.WriteLine("Error: Invalid agency.");
             }
             else if (agent == "FBI") {
-                if (pass[0] >= '4' && pass[0] <= '7' && pass[1] % 2 != 0 && pass[3] % 2 == 0) {
+                if (pass[0] >= '4' && pass[0] <= '7' && pass[1] % 2 != 0 && pass[3] % 2 == 0 && pass[3] != 6) {
                     Console.WriteLine("Pass is valid.");
                 }
                 else {
@@ -31,7 +31,7 @@ namespace Homework {
                 }
             }
             else if (agent == "NSA") {
-                if ((pass[5] == '1' || pass[5] == '2' || pass[5] == '3' || pass[5] == '5' || pass[5] == '6') && pass[4] % 3 == 0 && pass[4] % 2 != 0 && pass.Contains('7')) {
+                if ((pass[5] == '1' || pass[5] == '2' || pass[5] == '3' || pass[5] == '5' || pass[5] == '6') && pass[3] % 3 == 0 && pass[3] % 2 != 0 && pass.Contains('7')) {
                     Console.WriteLine("Pass is valid.");
                 }
                 else {
